@@ -1,0 +1,26 @@
+<div class="container home-container">
+    <div class="row">
+        <div class="col-7">
+            <app-text-desc-button></app-text-desc-button>
+        </div>
+        <div class="col-5 mt-4 mb-4">
+            <app-fs-carousel></app-fs-carousel>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <app-text-thumbnail-slider [textData]="trendingCourses"></app-text-thumbnail-slider>
+    </div>
+    <div class="row mb-4">
+        <app-text-desc-image></app-text-desc-image>
+    </div>
+    <div class="row mb-4">
+        <app-text-thumbnail-slider></app-text-thumbnail-slider>
+    </div>
+    <div class="row mb-4">
+        <app-text-desc-button [textData]="contactRedirectData"></app-text-desc-button> 
+    </div>
+<!-- <app-text-desc-button></app-text-desc-button> 
+<app-text-desc-image></app-text-desc-image> 
+<app-text-thumbnail-slider></app-text-thumbnail-slider> -->
+
+</div>

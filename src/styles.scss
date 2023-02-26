@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.brand-font-title{
+    color:#123f68;
+    font-weight: bold;
+}
+.fs-button{
+    color: #ffffff;
+    background-color: #128fc9;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    text-transform: none;
+}
+// .fs-footer-bg-color{
+//     background-color:#dddddd;
+// }
+.fs-text-color{
+    color:#123f68;
+}
+h1{
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.heading-underline{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -0.6rem;
+        left: 0;
+        height: 0.4rem;
+        width: 2rem;
+        background: #128fc9;
+        border-radius: 0.2rem;
+    }
+}
+.nopadding{
+    padding: 0;
+}
+.text-thumbnail-slider-container, .fs-carousel-container{
+    .carousel-indicators{
+        bottom: -2.625rem;
+        button{
+            background-color: #128fc9;
+            width: 0.8rem;
+            height: 0.25rem;
+        }
+    }
+}

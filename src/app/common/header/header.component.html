@@ -1,0 +1,23 @@
+<div class="page-header">
+    <div class="container">
+    <div class="row mt-2 align-items-center">
+        <div class="col-6 mb-1">
+            <img class="logo" src="assets/images/logo/logo.jpg">
+        </div>
+        <div class="col-5">
+           <ul class="menu-items mb-0">
+            <li *ngFor="let menu of menuItems" >
+               <a [href]="menu.url" class="brand-font-title">
+                {{menu.name}}
+               </a> 
+            </li>
+           </ul>
+        </div>
+        <div class="col-1 text-end nopadding">
+            <button class="fs-button">
+                Login
+               </button>
+        </div>
+    </div>
+</div>
+</div>

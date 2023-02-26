@@ -1,0 +1,24 @@
+<div class="container-fluid our-team-container pt-2 pb-2">
+    <h1 class="heading fs-text-color text-left heading-underline"
+        >Our Team</h1>
+    <p >We deliver best with best team</p>
+    <div class="row team-image-container" >
+        <div class="col-3 justify-content-center d-flex"  *ngFor="let item of teamData">
+            <div class="row m-1 individual-box" >
+                <!-- <div class="col-12 nopadding"> -->
+                <img [src]="item.image" class="thumbnail-image" >
+            <!-- </div> -->
+            <div class="col-12 team-member-info text-center">
+                <div class="fs-text-color image-title custom-elipsis" [title]="item?.name" *ngIf="item?.name">{{item.name}}</div>
+                <div class="fs-text-color image-description custom-elipsis" [title]="item?.designation" *ngIf="item?.designation">{{item.designation}}</div>
+                <div class="fs-text-color image-author mt-2 custom-elipsis" [title]="item?.email" *ngIf="item?.email">
+{{item.email}}
+                </div>
+                </div>
+            </div>
+
+                
+          
+        </div>
+    </div>
+</div>

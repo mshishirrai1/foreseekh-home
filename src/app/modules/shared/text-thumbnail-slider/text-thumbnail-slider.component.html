@@ -1,0 +1,27 @@
+<div class="container-fluid text-thumbnail-slider-container pt-2 pb-2">
+    <h1 class="heading fs-text-color text-{{textData.alignHeading}}"
+        [class.heading-underline]="textData.addUnderline && textData.alignHeading === 'left'">{{textData.title}}</h1>
+    <p class="pt-4" >{{textData.description}}</p>
+    <ngb-carousel class="mb-4">
+        <ng-template ngbSlide *ngFor="let item of sliderData">
+            <div class="row">
+                <div class="col-3 justify-content-center d-flex"  *ngFor="let subItem of item">
+                    <div class="row m-1 individual-box"   [ngStyle]="{'cursor': textData.cursor}">
+                        <div class="col-12 nopadding">
+                        <img [src]="subItem.image" class="thumbnail-image" >
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="fs-text-color image-title custom-elipsis" [title]="subItem?.title" *ngIf="subItem?.title">{{subItem.title}}</div>
+                        <div class="fs-text-color image-description custom-elipsis" [title]="subItem?.description" *ngIf="subItem?.description">{{subItem.description}}</div>
+                        <div class="fs-text-color image-author mt-2 custom-elipsis" [title]="subItem?.author" *ngIf="subItem?.author">
+                            <i class="bi bi-person-bounding-box "></i>{{subItem.author}}
+                        </div>
+                        <div class="fs-text-color image-date mt-1 custom-elipsis" [title]="subItem?.date" *ngIf="subItem?.date">
+                            <i class="bi bi-calendar-week "></i>{{subItem.date}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

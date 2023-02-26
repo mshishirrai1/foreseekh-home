@@ -1,0 +1,28 @@
+.page-header {
+    box-shadow: 0 0.188rem 0.313rem -0.188rem #b8c3c5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    .logo {
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .menu-items {
+        list-style-type: none;
+
+        li {
+            display: inline;
+            margin-right: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .nopadding {
+        padding: 0;
+    }
+}

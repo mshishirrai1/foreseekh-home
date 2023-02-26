@@ -1,0 +1,31 @@
+.footer-container{
+    background-color: #dee1e2;
+    .contact-heading{
+        font-weight: bold;
+    }
+    .logo {
+        width: 5rem;
+        height: 4rem;
+    }
+    .footer-menu-items{
+        list-style-type: none;
+        li{
+            margin-bottom: 0.4rem;
+        }
+        a{
+            text-decoration: none;
+            &:hover{
+                color: unset;
+            }
+        }
+    }
+    .follow-us-icon{
+        margin-right: 2rem;
+        color: unset;
+        cursor: pointer;
+    }
+    .contact-description{
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+}
