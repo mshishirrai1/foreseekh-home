@@ -1,7 +1,7 @@
 <div class="container-fluid fs-carousel-container nopadding">
     <ngb-carousel class="mb-4">
         <ng-template ngbSlide *ngFor="let item of sliderData">
-            <div class="row banner-outer" [ngStyle]="{'cursor': item?.cursor}">
+            <div class="row banner-outer m-0" [ngStyle]="{'cursor': item?.cursor}">
                 <img [src]="item.image" class="slider-image nopadding"
                     (click)="onBannerClick(item.enableBannerClick,item.onBannerClickUrl)">
                     <div class="banner-text-container fs-text-color" *ngIf="item.enableAdditionalTextOnBanner">

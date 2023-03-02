@@ -25,7 +25,7 @@ export class HeaderComponent {
     },
     {
       name:'Contact Us',
-      url:'/'
+      url:'contact-us'
     }
   ]
 

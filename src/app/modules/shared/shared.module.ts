@@ -6,6 +6,9 @@ import { TextDescButtonComponent } from './text-desc-button/text-desc-button.com
 import { TextDescImageComponent } from './text-desc-image/text-desc-image.component';
 import { TextThumbnailSliderComponent } from './text-thumbnail-slider/text-thumbnail-slider.component';
 import { FsCarouselComponent } from './fs-carousel/fs-carousel.component';
+import { FsProductsComponent } from './fs-products/fs-products.component';
+import { FsPaginationCarouselComponent } from './fs-pagination-carousel/fs-pagination-carousel.component';
+import { TitleIconTextComponent } from './title-icon-text/title-icon-text.component';
 
 
 
@@ -14,7 +17,10 @@ import { FsCarouselComponent } from './fs-carousel/fs-carousel.component';
     TextDescButtonComponent,
     TextDescImageComponent,
     TextThumbnailSliderComponent,
-    FsCarouselComponent
+    FsCarouselComponent,
+    FsProductsComponent,
+    FsPaginationCarouselComponent,
+    TitleIconTextComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +30,10 @@ import { FsCarouselComponent } from './fs-carousel/fs-carousel.component';
     TextDescButtonComponent,
     TextDescImageComponent,
     TextThumbnailSliderComponent,
-    FsCarouselComponent
+    FsCarouselComponent,
+    FsProductsComponent,
+    FsPaginationCarouselComponent,
+    TitleIconTextComponent
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,46 @@
+.fs-product-container {
+    .all-box-outer {
+        margin: 0 4rem;
+    }
+
+    .normal-box {
+        height: 22rem;
+        margin-top: 4rem;
+    }
+
+    .medium-box {
+        height: 28rem;
+    }
+
+    .individual-box {
+        border-radius: 0.6rem;
+        overflow: hidden;
+        box-shadow: 0 38px 38px rgb(0 0 0 / 20%);
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            transform: scaleY(1.04);
+            transition: 1s;
+        }
+
+        .individual-box-heading {
+            background-color: #01488B;
+            font-size: 1.8rem;
+            font-weight: 700;
+
+            .box-heading-1 {
+                color: #3dbbf1;
+            }
+
+            .box-heading-2 {
+                color: #b7b7b7;
+            }
+        }
+
+        .individual-box-body {
+            background-color: #f9f9f9;
+            height: 100%;
+        }
+    }
+
+}

@@ -1,4 +1,4 @@
-.text-thumbnail-slider-container{
+.pagination-slider-container{
     .thumbnail-image{
         height: 15.625rem;
         width: 100%;
@@ -29,11 +29,11 @@
     .individual-box{
         border-radius: 0.4rem;
         border:0.063rem solid #d2f3f5;
-        transition: all 1s ease-in-out;
-        &:hover{
-            translate: 0 -0.3rem;
-            transition: 1s;
-        }
+        // transition: all 1s ease-in-out;
+        // &:hover{
+        //     translate: 0 -0.3rem;
+        //     transition: 1s;
+        // }
     }
     .custom-elipsis{
         white-space: nowrap;

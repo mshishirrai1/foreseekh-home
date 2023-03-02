@@ -1,0 +1,18 @@
+.icon-box-container{
+    box-shadow: 6px 8px 10px 6px rgb(0 0 0 / 20%);
+    border-radius: 0.8rem;
+    img{
+        height: 3.75rem;
+        width: 3.75rem;
+        background-color: #b7b7b7;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+    .title{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    .description{
+        color:#3dbaf0
+    }
+}

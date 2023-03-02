@@ -46,7 +46,7 @@ export class FsCarouselComponent {
   ]
 
   constructor(config: NgbCarouselConfig, private router: Router) {
-    config.interval = 200000;
+    config.interval = 2000000000;
     config.keyboard = true;
     config.pauseOnHover = true;
     config.showNavigationArrows = false;

@@ -74,6 +74,5 @@ export class TextThumbnailSliderComponent implements OnInit {
     while (this.textData.thumbnailData.length) {
       this.sliderData.push(this.textData.thumbnailData.splice(0, 4));
     }
-    console.log(this.sliderData)
   }
 }

@@ -1,39 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-fs-pagination-carousel',
+  templateUrl: './fs-pagination-carousel.component.html',
+  styleUrls: ['./fs-pagination-carousel.component.scss']
 })
-export class HomeComponent {
-
-  contactRedirectData = {
-    title: "WOULD LIKE TO KNOW MORE ABOUT US?",
-    description: `<br>.`,
-    showButton: true,
-    buttonUrl: '/contact-us',
-    buttonName: "Click Here",
-    addUnderline: false,
-    alignHeading: "center",//Center , left
-    alignContent: "center",//Center , left
-    alignButton: "center"//start,end,center
-  } 
-
-  trendingCourses = {
-    title: "Trending courses",
+export class FsPaginationCarouselComponent {
+  @Input() pageData = {
+    title: "Explore our courses",
     description: "",
     addUnderline: true,
     alignHeading: "left",//Center , left
     cursor:'pointer',//Cursor style
+    datePosition:"top",//top,bottom
+    numberOfItemsPerPage:4,
     thumbnailData:[
-      // {
-      //   image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
-      //   title:"Test title Test title Test titlevTest title Test title Test title",
-      //   description:"Test description",
-      //   url:'testurl',
-      //   author:"test author",
-      //   date:"22 Mar, 2023, 7p.m"
-      // },
+      {
+        image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
+        title:"Test title Test title Test titlevTest title Test title Test title",
+        description:"Test description",
+        url:'testurl',
+        author:"test author",
+        date:"22 Mar, 2023, 7p.m"
+      },
       {
         image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
         title:"Test title",
@@ -69,6 +59,22 @@ export class HomeComponent {
     ]
   }
 
-  constructor(){
+  sliderData :any= []
+
+  constructor(config: NgbCarouselConfig) {
+    config.interval = 6000000;
+    config.keyboard = true;
+    config.pauseOnHover = true;
+    config.showNavigationArrows = false;
+  }
+
+  ngOnInit(){
+    this.setChunkArray()
+  }
+
+  setChunkArray(){
+    while (this.pageData.thumbnailData.length) {
+      this.sliderData.push(this.pageData.thumbnailData.splice(0, this.pageData.numberOfItemsPerPage));
+    }
   }
 }

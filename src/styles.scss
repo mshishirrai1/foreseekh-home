@@ -42,7 +42,8 @@ h1{
 .nopadding{
     padding: 0;
 }
-.text-thumbnail-slider-container, .fs-carousel-container{
+.text-thumbnail-slider-container, .fs-carousel-container,
+.pagination-slider-container{
     .carousel-indicators{
         bottom: -2.625rem;
         button{
@@ -52,3 +53,15 @@ h1{
         }
     }
 }
+
+// .pagination-slider-container{
+//     counter-reset: section;
+//     button{
+//         position: relative;
+//         &::before{
+//             counter-increment: section;
+//             content:counter(section) ;
+//         }
+//     }
+    
+// }
