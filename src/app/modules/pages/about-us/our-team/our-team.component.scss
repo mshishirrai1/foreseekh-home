@@ -36,15 +36,14 @@
 
     .individual-box {
         border-radius: 0.4rem;
-        border: 0.063rem solid #d2f3f5;
         position: relative;
         background-color: #fafafa;
-        transition: all 1s ease-in-out;
-        box-shadow: 0 38px 38px rgb(0 0 0 / 20%);
-        &:hover{
-            translate: 0 -0.2rem;
-            transition: 1s;
-        }
+        // transition: all 1s ease-in-out;
+        box-shadow: 0 2px 6px 2px rgb(0 0 0 / 20%);
+        // &:hover{
+        //     translate: 0 -0.2rem;
+        //     transition: 1s;
+        // }
     }
 
     .custom-elipsis {

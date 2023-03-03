@@ -1,12 +1,14 @@
-<div class="container-fluid pagination-slider-container pt-2 pb-2">
+<div class="pagination-slider-container pt-2 pb-2">
     <h1 class="heading fs-text-color text-{{pageData.alignHeading}}"
-        [class.heading-underline]="pageData.addUnderline && pageData.alignHeading === 'left'">{{pageData.title}}</h1>
-    <p class="pt-4" >{{pageData.description}}</p>
+        [class.heading-underline]="pageData.addUnderline && pageData.alignHeading === 'left'"
+        *ngIf="pageData.showTitle">{{pageData.title}}</h1>
+    <p class="pt-4" *ngIf="pageData.showDescription" >{{pageData.description}}</p>
     <ngb-carousel>
         <ng-template ngbSlide *ngFor="let item of sliderData">
             <div class="row">
                 <div class="col-3 justify-content-center d-flex pb-4"  *ngFor="let subItem of item">
-                    <div class="row m-1 individual-box"   [ngStyle]="{'cursor': pageData.cursor}">
+                    <div class="row m-1 individual-box"   [ngStyle]="{'cursor': pageData.cursor}" 
+                    (click)="onCardClick(subItem.url)">
                         <div class="col-12 nopadding">
                         <img [src]="subItem.image" class="thumbnail-image" >
                     </div>

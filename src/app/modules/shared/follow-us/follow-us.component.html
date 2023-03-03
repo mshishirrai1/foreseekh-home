@@ -1,0 +1,13 @@
+<div class="follow-us-container pt-4 pb-4">
+    <h2 class="heading fs-text-color text- heading-underline" *ngIf="pageData.title">  
+        {{pageData.title}}
+    </h2>
+    <div class="row icon-section">
+        <div class="col text-center" *ngFor="let item of pageData.iconList">
+            <a class="follow-us-icon" target="_blank"
+            [href]="item.url">
+            <img [src]="item.path" alt="facebbok">
+        </a>
+        </div>
+    </div>
+</div>

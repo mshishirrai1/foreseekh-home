@@ -28,7 +28,7 @@ export class ContactUsComponent {
   textDescData = {
     title: "Contact Us  ",
     description: `<p class='pt-4'>We'd love your feedback if you're a student, tutor or Parent!. Please feel free to 
-    shoot us an email at <b>support@foreseekh.com</b> or fill out the form below with your message.</p>`,
+    contact us.</p>`,
     showButton: false,
     buttonUrl: '',
     buttonName: "",

@@ -14,6 +14,14 @@ const routes: Routes = [
     path: 'contact-us',
     loadChildren: () => import('./modules/pages/contact-us/contact-us.module').then( m => m.ContactUsModule)
   },
+  {
+    path: 'blogs',
+    loadChildren: () => import('./modules/pages/blogs/blogs.module').then( m => m.BlogsModule)
+  },
+  {
+    path: 'courses',
+    loadChildren: () => import('./modules/pages/courses/courses.module').then( m => m.CoursesModule)
+  },
 ];
 
 @NgModule({

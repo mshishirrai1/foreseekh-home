@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -15,6 +16,8 @@ export class FsPaginationCarouselComponent {
     cursor:'pointer',//Cursor style
     datePosition:"top",//top,bottom
     numberOfItemsPerPage:4,
+    showTitle:true,
+    showDescription:true,
     thumbnailData:[
       {
         image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
@@ -61,7 +64,7 @@ export class FsPaginationCarouselComponent {
 
   sliderData :any= []
 
-  constructor(config: NgbCarouselConfig) {
+  constructor(config: NgbCarouselConfig, private router: Router) {
     config.interval = 6000000;
     config.keyboard = true;
     config.pauseOnHover = true;
@@ -76,5 +79,9 @@ export class FsPaginationCarouselComponent {
     while (this.pageData.thumbnailData.length) {
       this.sliderData.push(this.pageData.thumbnailData.splice(0, this.pageData.numberOfItemsPerPage));
     }
+  }
+
+  onCardClick(url:string){
+    this.router.navigate([url]);
   }
 }

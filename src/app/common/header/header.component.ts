@@ -17,11 +17,11 @@ export class HeaderComponent {
     },
     {
       name:'Courses',
-      url:'/'
+      url:'courses'
     },
     {
       name:'Blog',
-      url:'/'
+      url:'blogs'
     },
     {
       name:'Contact Us',

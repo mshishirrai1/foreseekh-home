@@ -7,7 +7,7 @@
         <div class="col-5">
            <ul class="menu-items mb-0">
             <li *ngFor="let menu of menuItems" >
-               <a [href]="menu.url" class="brand-font-title">
+               <a [routerLink]="menu.url" class="brand-font-title">
                 {{menu.name}}
                </a> 
             </li>
