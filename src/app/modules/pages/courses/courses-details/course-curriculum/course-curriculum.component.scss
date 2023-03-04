@@ -1,0 +1,34 @@
+.curriculum-container{
+    .unit-inner{
+        border: 1px solid #3dbaf0;
+        border-radius: 0.8rem;
+        box-shadow: rgb(0 0 0 / 10%) 12px 12px 12px
+    }
+    .arrow-container{
+        float: right;
+        color:#3dbaf0;
+    }
+    .unit-name{
+        font-weight: 700;
+    }
+    .chapter-border-bottom{
+        border-bottom: 1px solid #3dbaf0;
+    }
+    .course-content-section{
+        width: 50%;
+        margin: 3rem auto 1.5rem auto;
+        box-shadow: 4px 4px 2px 20px rgb(0 0 0 / 20%);
+        border-radius: 0.8rem;
+        transition: all 0.3s cubic-bezier(0, 0, 0.5, 1) 0s;
+        &:hover{
+            transform: scale3d(1.03, 1.03, 1.08) translate3d(0.1rem, -0.25rem, 20rem);
+        }
+        .content-title{
+            font-size: 1.4rem;
+        }
+        .content-value{
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+    }
+}

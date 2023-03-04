@@ -30,10 +30,15 @@
         border-radius: 0.4rem;
         border:0.063rem solid #d2f3f5;
         transition: all 1s ease-in-out;
+        box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
         &:hover{
             translate: 0 -0.3rem;
             transition: 1s;
         }
+        // transition: all 0.3s cubic-bezier(0, 0, 0.5, 1) 0s;
+        // &:hover{
+        //     transform: scale3d(1.03, 1.03, 1.08) translate3d(0.1rem, -0.25rem, 20rem);
+        // }
     }
     .custom-elipsis{
         white-space: nowrap;

@@ -1,1 +1,41 @@
-<p>course-instructor works!</p>
+<div class="course-instructor-container pt-2 pb-2">
+    <h1 class="heading fs-text-color heading-underline">{{instructorData?.title}}</h1>
+
+    <div class="row instructor-description">
+        <img class="instructor-image" [src]="instructorData?.imagePath">
+<div class="instructor-box">
+    <p [innerHtml]="instructorData?.description"> </p>
+    <div class="instructor-bio pt-2 text-center">
+        <div class="name">{{instructorData?.name}}</div>
+        <div class="desig1">{{instructorData?.desc1}}</div>
+        <div class="desig2">{{instructorData?.desc2}}</div>
+      </div>   
+      <div class="instructor-social pt-2 text-center">
+        <div class="col-12">
+            <a class="follow-us-icon" target="_blank"
+                [href]="instructorData?.fbUrl">
+                <img src="assets/images/footer/facebook.svg" alt="facebbok">
+            </a>
+            <a class="follow-us-icon" [href]="instructorData?.instaUrl" target="_blank">
+                <img src="assets/images/footer/instagram.svg" alt="facebbok">
+            </a>
+            <a class="follow-us-icon" target="_blank" [href]="instructorData?.linkedinUrl">
+                <img src="assets/images/footer/linkedin.svg" alt="facebbok">
+            </a>
+            <a class="follow-us-icon" target="_blank"
+                [href]=" instructorData?.twitterUrl">
+                <img src="assets/images/footer/twitter.svg" alt="facebbok">
+            </a>
+            <a class="follow-us-icon" target="_blank"
+                [href]=" instructorData?.youtubeUrl">
+                <img src="assets/images/footer/youtube.svg" alt="facebbok">
+            </a>
+        </div>
+      </div>   
+</div>
+      
+   
+        
+    </div>
+
+    </div>

@@ -1,0 +1,45 @@
+.course-instructor-container{
+    .instructor-description{
+        width: 80%;
+        margin: 0 auto;
+      
+    }
+    .instructor-image{
+        height: 14rem;
+        width: 16rem;
+        border-radius: 15%;
+        margin: 0 auto;
+        z-index: 5;
+    }
+    .instructor-box{
+        box-shadow:rgb(0 0 0 / 10%) 2px 2px 2px 4px;
+        margin-top: -6rem;
+        border-radius: 0.8rem;
+        padding-top: 8rem;
+        position: relative;
+        p{
+            text-align: justify;
+        }
+    }
+    .instructor-bio{
+        position: absolute;
+        top: 0;
+        width: 36%;
+        .name{
+            font-weight: 700;
+        }
+        .desig1,.desig2{
+            font-size: 0.9rem;
+        }
+    }
+    .instructor-social{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 36%;
+        img{
+            height: 2rem;
+            width: 4rem;
+        }
+    }
+}

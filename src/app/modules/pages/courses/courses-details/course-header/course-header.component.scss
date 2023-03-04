@@ -1,0 +1,23 @@
+.course-header{
+    // box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
+    // border-radius: 0.8rem;
+    p{
+        text-align: justify;
+    }
+    .course-fees-section{
+        span{
+            display: block;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    }
+    .enroll-button{
+        box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
+        transition: all 0.3s cubic-bezier(0, 0, 0.5, 1) 0s;
+        width: 10rem;
+        font-weight: 700;
+        &:hover{
+            transform: scale3d(1.03, 1.03, 1.08) translate3d(0.1rem, -0.25rem, 20rem);
+        }
+    }
+}

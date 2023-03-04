@@ -1,1 +1,26 @@
-<p>course-curriculum works!</p>
+<div class="curriculum-container pt-2 pb-2">
+    <h1 class="heading fs-text-color heading-underline">{{curriculumData?.title}}</h1>
+    <div class="row mb-4 mt-4">
+        <div class="col-4  unit-outer fs-text-color" *ngFor="let item of curriculumData?.curriculumList;let i = index" (click)="onUnitClick(i)" >
+            <div class="unit-inner m-2 p-2 cursor-pointer">
+           <span class="unit-name"> {{item?.unitName}}</span>
+                <span class="arrow-container">
+                    <i class="bi bi-caret-down" *ngIf="activeUnit !== i "></i>
+                    <i class="bi bi-caret-up" *ngIf="activeUnit === i "></i>
+                </span>
+            <div class="row chapters-section p-2 text-center" *ngIf="item.chapters.length > 0 && activeUnit === i ">
+                <hr class="m-0">
+                <div class="chapter p-2" [class.chapter-border-bottom]="!last" *ngFor="let subItem of item.chapters;let last=last">
+                    {{subItem?.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="course-content-section row p-2" *ngIf="courseContentData?.length > 0">
+        <div class="col-6 text-center fs-text-color" *ngFor="let item of courseContentData">
+            <div class="content-title"> {{item.name}}  </div>
+            <div class="content-value"> {{item.value}}  </div>
+        </div>
+    </div>
+</div>

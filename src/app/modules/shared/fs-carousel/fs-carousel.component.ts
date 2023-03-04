@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class FsCarouselComponent {
 
-  sliderData = [
+  @Input() sliderData = [
     {
       image: "assets/images/homePageSlider/1.jpg",
       enableAdditionalTextOnBanner:true,

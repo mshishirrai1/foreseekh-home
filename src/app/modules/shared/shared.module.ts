@@ -10,6 +10,7 @@ import { FsProductsComponent } from './fs-products/fs-products.component';
 import { FsPaginationCarouselComponent } from './fs-pagination-carousel/fs-pagination-carousel.component';
 import { TitleIconTextComponent } from './title-icon-text/title-icon-text.component';
 import { FollowUsComponent } from './follow-us/follow-us.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 
@@ -22,7 +23,8 @@ import { FollowUsComponent } from './follow-us/follow-us.component';
     FsProductsComponent,
     FsPaginationCarouselComponent,
     TitleIconTextComponent,
-    FollowUsComponent
+    FollowUsComponent,
+    FaqComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,8 @@ import { FollowUsComponent } from './follow-us/follow-us.component';
     FsProductsComponent,
     FsPaginationCarouselComponent,
     TitleIconTextComponent,
-    FollowUsComponent
+    FollowUsComponent,
+    FaqComponent
   ]
 })
 export class SharedModule { }

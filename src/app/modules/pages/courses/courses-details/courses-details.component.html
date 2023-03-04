@@ -1,1 +1,20 @@
-<p>courses-details works!</p>
+<div class="container courses-details-container">
+    <div class="row mt-4 mb-4">
+        <div class="col-5">
+           <app-course-header [course]="course"></app-course-header>
+        </div>
+        <div class="col-7 ">
+            <app-fs-carousel [sliderData]="sliderData"></app-fs-carousel>
+        </div>
+    </div>
+    <div class="row mt-4 mb-4">
+        <app-text-desc-button [textData]="aboutCourse"></app-text-desc-button>
+    </div>
+    <div class="row mt-4 mb-4">
+        <app-course-curriculum [curriculumData]="curriculumData" 
+        [courseContentData]="courseContentData"></app-course-curriculum>
+    </div>
+    <div class="row mt-4 mb-4">
+        <app-course-instructor [instructorData]="instructorData"></app-course-instructor>
+    </div>
+    </div>
