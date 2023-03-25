@@ -1,0 +1,59 @@
+.highlight-container {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .home-button {
+        font-weight: 700;
+        margin-top: 2rem;
+    }
+    .highlight-text {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #158dcb;
+    }
+
+   
+}
+
+ /* DEMO-SPECIFIC STYLES */
+ .highlight-text-animate {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3dbbf1;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    /* Ensures the content is not revealed until the animation */
+    // border-right: .15em solid #3dbbf1;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #3dbbf1
+    }
+}

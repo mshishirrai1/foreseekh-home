@@ -2,6 +2,9 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-color: #f7fdff;
+}
 .brand-font-title{
     color:#123f68;
     font-weight: bold;
@@ -66,6 +69,20 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.shake {
+    animation: shake-animation 4.72s ease ;
+    transform-origin: 50% 50%;
+  }
+@keyframes shake-animation {
+    0% { transform:translate(0,0) }
+   1.78571% { transform:translate(5px,0) }
+   3.57143% { transform:translate(0,0) }
+   5.35714% { transform:translate(5px,0) }
+   7.14286% { transform:translate(0,0) }
+   8.92857% { transform:translate(5px,0) }
+   10.71429% { transform:translate(0,0) }
+   100% { transform:translate(0,0) }
+ }
 // .pagination-slider-container{
 //     counter-reset: section;
 //     button{

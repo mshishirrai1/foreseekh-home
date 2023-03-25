@@ -1,0 +1,16 @@
+
+<div class="highlight-container pt-2 pb-2">
+    <h1 class="heading fs-text-color highlight-text-animate"
+    [class.heading-underline]="textData.addUnderline && textData.alignHeading === 'left'">{{textData.title}}</h1> 
+
+    <div class="highlight-text">Lorem ipsum sdfafsdf sdfafsdf </div>
+    <div class="highlight-text">Lorem ipsum sdfafsdf sdfafsdf </div>
+    <div class="highlight-text">Lorem ipsum sdfafsdf sdfafsdf </div>
+   
+
+    <div class="button-container text-{{textData.alignButton}}" >
+        <button (click)="onButtonClick()" class="fs-button text-center home-button shake" *ngIf="textData?.showButton">
+            {{textData.buttonName}}
+        </button>
+    </div>
+</div>

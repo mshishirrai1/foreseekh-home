@@ -1,5 +1,4 @@
 .fs-carousel-container{
-    box-shadow: 0 12px 12px rgb(0 0 0 / 20%);
     border-radius: 0.8rem;;
     img{
         border-radius: 0.8rem;
@@ -14,4 +13,7 @@
         font-size: 1.5rem;
         font-weight: 700;
     }
+}
+.show-shadow{
+    box-shadow: 0 12px 12px rgb(0 0 0 / 20%);
 }

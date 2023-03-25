@@ -6,7 +6,7 @@
         <ng-template ngbSlide *ngFor="let item of sliderData">
             <div class="row">
                 <div class="col-3 justify-content-center d-flex"  *ngFor="let subItem of item">
-                    <div class="row m-1 individual-box"   [ngStyle]="{'cursor': textData.cursor}">
+                    <div class="row m-1 individual-box pb-2"   [ngStyle]="{'cursor': textData.cursor}">
                         <div class="col-12 nopadding">
                         <img [src]="subItem.image" class="thumbnail-image" >
                     </div>

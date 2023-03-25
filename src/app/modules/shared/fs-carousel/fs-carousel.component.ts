@@ -12,37 +12,39 @@ export class FsCarouselComponent {
 
   @Input() sliderData = [
     {
-      image: "assets/images/homePageSlider/1.jpg",
+      image: "assets/images/products/product2.svg",
       enableAdditionalTextOnBanner:true,
-      title: "Test title",
+      title: "",
       enableBannerClick: true,
       onBannerClickUrl: "/about-us",
       cursor: "pointer",
+      showShadow:false,
     },
     {
-      image: "assets/images/homePageSlider/2.jpg",
+      image: "assets/images/products/product1.svg",
       enableAdditionalTextOnBanner:true,
-      title: "Test title",
+      title: "",
       enableBannerClick: true,
       onBannerClickUrl: "/about-us",
       cursor: "pointer",
+      showShadow:false,
     },
-    {
-      image: "assets/images/homePageSlider/3.jpg",
-      enableAdditionalTextOnBanner:true,
-      title: "Test title",
-      enableBannerClick: true,
-      onBannerClickUrl: "/about-us",
-      cursor: "pointer",
-    },
-    {
-      image: "assets/images/homePageSlider/4.jpg",
-      enableAdditionalTextOnBanner:true,
-      title: "Test title",
-      enableBannerClick: true,
-      onBannerClickUrl: "/about-us",
-      cursor: "pointer",
-    },
+    // {
+    //   image: "assets/images/homePageSlider/3.jpg",
+    //   enableAdditionalTextOnBanner:true,
+    //   title: "Test title",
+    //   enableBannerClick: true,
+    //   onBannerClickUrl: "/about-us",
+    //   cursor: "pointer",
+    // },
+    // {
+    //   image: "assets/images/homePageSlider/4.jpg",
+    //   enableAdditionalTextOnBanner:true,
+    //   title: "Test title",
+    //   enableBannerClick: true,
+    //   onBannerClickUrl: "/about-us",
+    //   cursor: "pointer",
+    // },
   ]
 
   constructor(config: NgbCarouselConfig, private router: Router) {

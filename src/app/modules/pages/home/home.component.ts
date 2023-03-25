@@ -69,6 +69,24 @@ export class HomeComponent {
     ]
   }
 
+  faqData = {
+    title:"Explore our faq",
+    faqList:[
+      {
+        question:"Test question?",
+        answer:"Test answer",
+      },
+      {
+        question:"Test question?",
+        answer:"Test answer",
+      },
+      {
+        question:"Test question?",
+        answer:"Test answer",
+      }
+    ]
+  }
+
   constructor(){
   }
 }

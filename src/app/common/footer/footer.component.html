@@ -1,25 +1,14 @@
 <div class="footer-container">
     <div class="container fs-footer-bg-color">
-        <div class="row align-items-center">
+        <div class="row align-items-center pt-4">
             <div class="col-4">
-                <div class="contact-heading fs-text-color mt-1">Contact Us : </div>
-                <div class="contact-description fs-text-color mt-2">
-                    <div>
-                        <img class="logo" src="assets/images/logo/logo-png.png"><br>
-                        FORESEEKH EDUTECH LLP,
-                    </div>
-                    <div>
-                        2nd Floor, Assisi Complex , Jail road,
-                    </div>
-                    <div>
-                        Bejai, Mangalore , D.K District,
-                    </div>
-                    <div>
-                        Karnataka, India - 575003
-                    </div>
-
-                </div>
-
+                <ul class="footer-menu-items mb-0">
+                    <li *ngFor="let menu of footerMenuItems">
+                        <a [routerLink]="menu.url" class="fs-text-color">
+                            {{menu.name}}
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="col-4">
                 <div class="contact-number-section mt-2 fs-text-color row">
@@ -53,13 +42,19 @@
             </div>
             <div class="col-4">
                 <ul class="footer-menu-items mb-0">
-                    <li *ngFor="let menu of footerMenuItems">
-                        <a [href]="menu.url" class="fs-text-color">
+                    <li *ngFor="let menu of footerMenuItemsRight">
+                        <a [routerLink]="menu.url" class="fs-text-color">
                             {{menu.name}}
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
+        <hr>
+        <div class="copy-rights fs-text-color text-center">
+            All rights reserved © {{currentYear}} | FORESEEKH EDUTECH LLP
+        </div>
     </div>
+   
+
 </div>

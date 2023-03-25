@@ -1,4 +1,22 @@
 <div class="container about-us-container">
     <!-- <app-text-desc-image></app-text-desc-image>  -->
-    <app-our-team></app-our-team>
+    <div class="row mb-4">
+        <app-text-desc-image [textData]="aboutData"></app-text-desc-image>
+    </div>
+    <div class="row mb-4">
+        <app-text-desc-button [textData]="knowMore"></app-text-desc-button>
+    </div>
+    <div class="row mb-4">
+        <app-our-team></app-our-team>
+    </div>
+ 
+    <div class="row mb-4">
+        <app-text-desc-button [textData]="visionData"></app-text-desc-button>
+    </div>
+    <div class="row mb-4">
+        <app-text-desc-button [textData]="missionData"></app-text-desc-button>
+    </div>
+    <div class="row mb-4">
+        <app-text-desc-button [textData]="ideologyData"></app-text-desc-button>
+    </div>
     </div>

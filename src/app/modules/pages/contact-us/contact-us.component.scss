@@ -7,4 +7,20 @@
         font-size: 1.4rem;
         font-weight: 700;
     }
+    .address-container{
+        font-weight: 700;
+        margin-left: 14rem;
+        div{
+            padding-bottom: 0.6rem;
+        }
+    }
+    .logo{
+        height: 8rem;
+    }
+    .address-outer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }

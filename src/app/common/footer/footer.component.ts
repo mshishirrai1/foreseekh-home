@@ -28,4 +28,21 @@ export class FooterComponent {
       url:'/'
     }
   ]
+
+  footerMenuItemsRight =[
+    {
+      name:'Terms of use',
+      url:'/'
+    },
+    {
+      name:'Privacy policy',
+      url:'/'
+    },
+    {
+      name:'Refund policy',
+      url:'/'
+    },
+  ]
+
+  currentYear = new Date().getFullYear();
 }

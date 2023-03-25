@@ -74,5 +74,14 @@ export class TextThumbnailSliderComponent implements OnInit {
     while (this.textData.thumbnailData.length) {
       this.sliderData.push(this.textData.thumbnailData.splice(0, 4));
     }
+    // const lastDataLength = this.sliderData[this.sliderData.length-1].length;
+    // if(this.sliderData.length > 1 && lastDataLength !== 4){
+    //   const items = [...this.sliderData[0].slice(0, 4 - lastDataLength)]
+    //   this.addItemsToArray(items)
+    // }
+  }
+
+  addItemsToArray(data:any){
+    this.sliderData[this.sliderData.length-1].concat(...data)
   }
 }

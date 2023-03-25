@@ -1,7 +1,7 @@
 <div class="text-desc-button-container pt-2 pb-2">
     <h1 class="heading fs-text-color text-{{textData.alignHeading}}"
         [class.heading-underline]="textData.addUnderline && textData.alignHeading === 'left'">{{textData.title}}</h1>
-    <p [class.text-center]="textData.alignContent === 'center'" [innerHtml]="textData.description"></p>
+    <p [class.text-center]="textData.alignContent === 'center'" class="mt-4" [innerHtml]="textData.description"></p>
     <div class="button-container text-{{textData.alignButton}}" >
         <button (click)="onButtonClick()" class="fs-button text-center" *ngIf="textData?.showButton">
             {{textData.buttonName}}

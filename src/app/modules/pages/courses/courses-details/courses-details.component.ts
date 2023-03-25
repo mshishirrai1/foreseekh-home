@@ -14,6 +14,7 @@ export class CoursesDetailsComponent {
       enableBannerClick: true,
       onBannerClickUrl: "/about-us",
       cursor: "pointer",
+      showShadow:true,
     },
     {
       image: "assets/images/homePageSlider/2.jpg",
@@ -22,6 +23,8 @@ export class CoursesDetailsComponent {
       enableBannerClick: true,
       onBannerClickUrl: "/about-us",
       cursor: "pointer",
+      showShadow:true,
+
     }
   ]
 

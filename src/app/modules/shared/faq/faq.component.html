@@ -1,1 +1,14 @@
-<p>faq works!</p>
+<div class="fs-product-container pt-2 pb-2">
+    <h1 class="heading fs-text-color heading-underline">{{faqData?.title}}</h1>
+
+    <div class="row faq-section fs-text-color p-2 mt-4 mb-4">
+        <div *ngFor="let item of faqData.faqList;let i = index; let last=last" (click)="toggleFaq(i)" class="cursor-pointer pt-4 pb-4" [class.border-bottom]="!last">
+            <div class="col-12 question pt-2">
+                {{item.question}} 
+                <i class="bi bi-caret-down" *ngIf="activeFaq !== i"></i>
+                <i class="bi bi-caret-up" *ngIf="activeFaq === i"></i>
+            </div>
+            <div class="col-12 answer pt-2" *ngIf="activeFaq === i">{{item.answer}} </div>
+        </div>
+    </div>
+    </div>

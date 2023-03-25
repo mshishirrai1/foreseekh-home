@@ -17,6 +17,7 @@
         overflow: hidden;
         box-shadow: 0 38px 38px rgb(0 0 0 / 20%);
         transition: all 1s ease-in-out;
+        position: relative;
 
         &:hover {
             transform: scaleY(1.04);
@@ -40,6 +41,12 @@
         .individual-box-body {
             background-color: #f9f9f9;
             height: 100%;
+        }
+        .product-img{
+            height: 11rem;
+            position: absolute;
+            bottom: 0;
+            right: 2rem;
         }
     }
 
