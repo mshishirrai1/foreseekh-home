@@ -4,19 +4,19 @@
             <div class="col-4">
                 <ul class="footer-menu-items mb-0">
                     <li *ngFor="let menu of footerMenuItems">
-                        <a [routerLink]="menu.url" class="fs-text-color">
+                        <a [routerLink]="menu.url" class="footer-text-color">
                             {{menu.name}}
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="col-4">
-                <div class="contact-number-section mt-2 fs-text-color row">
+                <div class="contact-number-section mt-2 footer-text-color row">
                     <div class="mb-2"> <b><i class="bi bi-telephone"></i> : </b> +91 7483045967</div>
                     <div class="mb-2"> <b><i class="bi bi-envelope-at"></i> : </b> support@foreseekh.com</div>
                 </div>
                 <div class="row text-align-center ">
-                    <div class="follow-us-title col-12 fs-text-color mb-2">Follow us on :</div>
+                    <div class="follow-us-title col-12 footer-text-color mb-2">Follow us on :</div>
                     <div class="col-12">
                         <a class="follow-us-icon" target="_blank"
                             href="https://www.facebook.com/profile.php?id=100082986573710">
@@ -43,15 +43,15 @@
             <div class="col-4">
                 <ul class="footer-menu-items mb-0">
                     <li *ngFor="let menu of footerMenuItemsRight">
-                        <a [routerLink]="menu.url" class="fs-text-color">
+                        <a [routerLink]="menu.url" class="footer-text-color">
                             {{menu.name}}
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <hr>
-        <div class="copy-rights fs-text-color text-center">
+        <hr class="fs-text-color">
+        <div class="copy-rights footer-text-color text-center">
             All rights reserved © {{currentYear}} | FORESEEKH EDUTECH LLP
         </div>
     </div>

@@ -1,4 +1,7 @@
+
+
 .text-thumbnail-slider-container{
+    position: relative;
     .thumbnail-image{
         height: 15.625rem;
         width: 100%;
@@ -46,4 +49,25 @@
         text-overflow: ellipsis;
         width: 16rem;
     }
+    .keen-slider{
+        padding: 0;
+    }
+    .arrow-container{
+        position: absolute;
+        bottom: 50%;
+        color: #3dbbf1;
+        .arrow{
+            position: absolute;
+            top: calc(50% - 2rem);
+            font-size: 3rem;
+            &.left{
+                left:-0.125rem;
+            }
+            &.right{
+                right:-2.525rem;
+            }
+        }
+    }
+
+
 }

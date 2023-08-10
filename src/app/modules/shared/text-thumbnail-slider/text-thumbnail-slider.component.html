@@ -2,10 +2,13 @@
     <h1 class="heading fs-text-color text-{{textData.alignHeading}}"
         [class.heading-underline]="textData.addUnderline && textData.alignHeading === 'left'">{{textData.title}}</h1>
     <p class="pt-4" >{{textData.description}}</p>
-    <ngb-carousel class="mb-4">
-        <ng-template ngbSlide *ngFor="let item of sliderData">
+    <!-- <ngb-carousel class="mb-4">
+        <ng-template ngbSlide *ngFor="let item of sliderData"> -->
             <div class="row">
-                <div class="col-3 justify-content-center d-flex"  *ngFor="let subItem of item">
+                <div class="keen-slider" #sliderRef>
+                    <!-- <div class="keen-slider__slide number-slide1">1</div> -->
+                    <ng-container *ngFor="let subItem of textData.thumbnailData">
+                   <div class="col-3 justify-content-center keen-slider__slide"  >
                     <div class="row m-1 individual-box pb-2"   [ngStyle]="{'cursor': textData.cursor}">
                         <div class="col-12 nopadding">
                         <img [src]="subItem.image" class="thumbnail-image" >
@@ -21,7 +24,14 @@
                         </div>
                     </div>
                 </div>
+            </ng-container>
+                  </div>
+                  <div class="arrow-container">
+                    <i class="bi bi-caret-left arrow left cursor-pointer" (click)="slider.next()"></i>
+                    <i class="bi bi-caret-right arrow right cursor-pointer" (click)="slider.prev()"></i>
+                  </div>
+                 
             </div>
-        </ng-template>
-    </ngb-carousel>
+        <!-- </ng-template>
+    </ngb-carousel> -->
 </div>

@@ -27,11 +27,14 @@
     }
     img{
         position: absolute;
-        height: 9rem;
-        width: 11rem;
+        display: block;
+        max-width: 11rem;
+        max-height: 9rem;
+        width: auto;
+        height: auto;
         border-radius: 20%;
         top: -5rem;
-        left: 2.8rem;
+        left: 3.75rem;
     }
 
     .individual-box {

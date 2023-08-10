@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import KeenSlider, { KeenSliderInstance } from "keen-slider"
 
 import { TextDescButtonComponent } from './text-desc-button/text-desc-button.component';
 import { TextDescImageComponent } from './text-desc-image/text-desc-image.component';
