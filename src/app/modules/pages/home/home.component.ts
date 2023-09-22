@@ -20,50 +20,42 @@ export class HomeComponent {
   } 
 
   trendingCourses = {
-    title: "Trending courses",
+    title: "Latest videos",
     description: "",
     addUnderline: true,
     alignHeading: "left",//Center , left
     cursor:'pointer',//Cursor style
     thumbnailData:[
-      // {
-      //   image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
-      //   title:"Test title Test title Test titlevTest title Test title Test title",
-      //   description:"Test description",
-      //   url:'testurl',
-      //   author:"test author",
-      //   date:"22 Mar, 2023, 7p.m"
-      // },
       {
-        image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
-        title:"Test title",
-        description:"Test description",
-        url:'testurl',
-        author:"test author",
+        image:"https://img.youtube.com/vi/uDnskkCRwsk/hqdefault.jpg",
+        title:"Vedic mathematics",
+        description:"Vedic Maths: Ancient wisdom, modern efficiency for rapid mental calculations.",
+        url:'https://youtu.be/uDnskkCRwsk',
+        author:"Punith Kumar Shetty",
         date:"22 Mar, 2023, 7p.m"
       },
       {
-        image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
-        title:"Test title",
-        description:"Test description",
-        url:'testurl',
-        author:"test author",
+        image:"https://img.youtube.com/vi/GeLI7Qwkpc4/hqdefault.jpg",
+        title:"Trignometry",
+        description:"Trigonometry: Unlocking angles, triangles, and waves in mathematics and physics.",
+        url:'https://youtu.be/GeLI7Qwkpc4',
+        author:"Punith Kumar Shetty",
         date:"22 Mar, 2023, 7p.m"
       },
       {
-        image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
-        title:"Test title",
-        description:"Test description",
-        url:'testurl',
-        author:"test author",
+        image:"https://img.youtube.com/vi/cUS1-CZr0r4/hqdefault.jpg",
+        title:"Integration",
+        description:"Integration: Uniting and finding the area under curves in calculus.",
+        url:'https://youtu.be/cUS1-CZr0r4',
+        author:"Punith Kumar Shetty",
         date:"22 Mar, 2023, 7p.m"
       },
       {
-        image:"https://fastly.picsum.photos/id/994/536/354.jpg?hmac=2vh9aMw_mfyFM5-wVaqCiL59AEOtwCMCpr6ZLjr_IT4",
-        title:"Test title",
-        description:"Test description",
-        url:'testurl',
-        author:"test author",
+        image:"https://img.youtube.com/vi/vDXeAGdjSFc/hqdefault.jpg",
+        title:"JEE Preparation",
+        description:"Complex Numbers: Imaginary and real parts combine for powerful mathematical tools.",
+        url:'https://youtu.be/vDXeAGdjSFc',
+        author:"Punith Kumar Shetty",
         date:"22 Mar, 2023, 7p.m"
       }
     ]

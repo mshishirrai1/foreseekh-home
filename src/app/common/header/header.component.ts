@@ -15,14 +15,14 @@ export class HeaderComponent {
       name:'About Us',
       url:'about-us'
     },
-    {
-      name:'Courses',
-      url:'courses'
-    },
-    {
-      name:'Blog',
-      url:'blogs'
-    },
+    // {
+    //   name:'Courses',
+    //   url:'courses'
+    // },
+    // {
+    //   name:'Blog',
+    //   url:'blogs'
+    // },
     {
       name:'Contact Us',
       url:'contact-us'
