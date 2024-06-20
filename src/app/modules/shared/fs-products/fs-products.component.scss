@@ -1,15 +1,29 @@
 .fs-product-container {
     .all-box-outer {
         margin: 0 4rem;
+        @media (max-width: 768px) {
+          margin: 0 1rem;
+        }
+    }
+    .desc{
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     .normal-box {
         height: 28rem;
         margin-top: 4rem;
+        @media (max-width: 768px) {
+          margin-top: 1rem;
+        }
     }
 
     .medium-box {
         height: 36rem;
+        @media (max-width: 768px) {
+          margin-top: 1rem;
+        }
     }
 
     .individual-box {

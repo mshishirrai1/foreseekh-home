@@ -12,8 +12,21 @@
     }
     .footer-menu-items{
         list-style-type: none;
+        // ul{
+          @media (max-width: 980px) {
+            margin: 0.8rem 0;
+            padding-left: 0;
+            text-align: center;
+          // }
+        }
         li{
             margin-bottom: 0.4rem;
+            @media (max-width: 980px) {
+              display: inline-block;
+              vertical-align: top;
+              width: 33%;
+              font-size: 0.8rem;
+            }
         }
         a{
             text-decoration: none;
@@ -37,5 +50,29 @@
     }
     .copy-rights{
         font-size: 0.8rem;
+        @media (max-width: 980px) {
+          font-size: 0.7rem;
+        }
+    }
+    .web-menu-section{
+      @media (max-width: 980px) {
+        display: none;
+      }
+    }
+    hr{
+      @media (max-width: 980px) {
+        margin: 0;
+      }
+    }
+    .contact-section{
+      @media (max-width: 980px) {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+    .outer-row-items{
+      @media (max-width: 980px) {
+        padding-top: 0 !important;
+      }
     }
 }

@@ -72,11 +72,21 @@ export class TextThumbnailSliderComponent implements OnInit, AfterViewInit, OnDe
   }
 
   ngAfterViewInit() {
+    let perview = 4
+    if(window.innerWidth <= 480){
+      perview=1
+    }else if(window.innerWidth > 480 && window.innerWidth <= 730){
+      perview=2
+    }else if(window.innerWidth > 730 && window.innerWidth <= 980){
+      perview=3
+    }else{
+      perview=4
+    }
     this.slider = new KeenSlider(this.sliderRef.nativeElement, {
       loop: true,
       rtl: true,
       slides: {
-        perView: 4,
+        perView: perview,
         spacing: 25,
       },
     })
@@ -97,7 +107,7 @@ export class TextThumbnailSliderComponent implements OnInit, AfterViewInit, OnDe
   //   this.sliderData[this.sliderData.length-1].concat(...data)
   // }
 
-  
+
   ngOnDestroy() {
     if (this.slider) this.slider.destroy()
   }

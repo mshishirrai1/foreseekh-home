@@ -8,7 +8,7 @@
                 <div class="keen-slider" #sliderRef>
                     <!-- <div class="keen-slider__slide number-slide1">1</div> -->
                     <ng-container *ngFor="let subItem of textData.thumbnailData">
-                   <div class="col-3 justify-content-center keen-slider__slide"  >
+                   <div class="col-lg-3 col-sm-12 col-md-6 justify-content-center keen-slider__slide"  >
                     <div class="row m-1 individual-box pb-2"   [ngStyle]="{'cursor': textData.cursor}">
                         <div class="col-12 nopadding">
                         <img [src]="subItem.image" class="thumbnail-image" >
@@ -30,7 +30,7 @@
                     <i class="bi bi-caret-left arrow left cursor-pointer" (click)="slider.next()"></i>
                     <i class="bi bi-caret-right arrow right cursor-pointer" (click)="slider.prev()"></i>
                   </div>
-                 
+
             </div>
         <!-- </ng-template>
     </ngb-carousel> -->

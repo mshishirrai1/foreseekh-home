@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  showMobileMenu = false
   menuItems =[
     {
       name:'Home',
@@ -28,5 +29,9 @@ export class HeaderComponent {
       url:'contact-us'
     }
   ]
+
+  menuOnMobile(){
+    this.showMobileMenu = !this.showMobileMenu
+  }
 
 }

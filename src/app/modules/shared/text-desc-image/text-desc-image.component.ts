@@ -7,11 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class TextDescImageComponent {
   @Input() textData = {
-    title: "UPSKILL YOURSELF IN EVERYWAY FROM ANYWHERE",
-    description: `Learn the whole or a bit of what interests you from a varied discipline in the 
-    comfort of your house. ForeSeekh is a hub for learning the skills you want and need, whether 
+    title: "UPSKILL YOURSELF ",
+    description: `Learn the whole or a bit of what interests you from a varied discipline in the
+    comfort of your house. ForeSeekh is a hub for learning the skills you want and need, whether
     you're just starting or a seasoned pro.<br><br> Maybe you want to get a better job or pursue an interest
-     that has been on your mind for a long time.<br><br> To know more about our courses curated by experts 
+     that has been on your mind for a long time.<br><br> To know more about our courses curated by experts
      and delivered by teachers from all over the world`,
     addUnderline: true,
     alignHeading: "left",//Center , left

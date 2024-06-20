@@ -1,15 +1,16 @@
 <div class="page-header">
     <div class="container">
     <div class="row pt-2 align-items-center">
-        <div class="col-5 mb-1">
+        <div class="col-sm-12 col-md-12 col-lg-5 mb-1  logo-outer">
+          <i class="bi bi-list" (click)="menuOnMobile()"></i>
             <img class="logo" src="assets/images/logo/logo-png.png">
         </div>
-        <div class="col-6 text-end">
+        <div class="col-lg-6 text-end menu-outer">
            <ul class="menu-items mb-0">
             <li *ngFor="let menu of menuItems" >
                <a [routerLink]="menu.url" class="brand-font-title">
                 {{menu.name}}
-               </a> 
+               </a>
             </li>
            </ul>
         </div>
@@ -19,5 +20,14 @@
                </button> -->
         </div>
     </div>
+</div>
+<div class="mobile-menu" *ngIf="showMobileMenu">
+  <ul class="menu-items mb-0">
+    <li *ngFor="let menu of menuItems"  (click)="menuOnMobile()">
+       <a [routerLink]="menu.url" class="brand-font-title">
+        {{menu.name}}
+       </a>
+    </li>
+   </ul>
 </div>
 </div>

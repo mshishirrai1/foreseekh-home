@@ -57,9 +57,16 @@
     }
     .team-image-container {
         margin-top: 7rem;
+        @media (max-width: 900px) {
+          margin-top: 0;
+        }
     }
     .team-member-info{
         margin-top: 5rem;
         margin-bottom: 1rem;
+    }.team-outer{
+      @media (max-width: 900px) {
+        margin-top: 6rem;
+      }
     }
 }
