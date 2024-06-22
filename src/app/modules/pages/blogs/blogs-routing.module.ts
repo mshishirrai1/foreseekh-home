@@ -13,10 +13,14 @@ const routes: Routes = [
           component: BlogsComponent
       },
       {
-          path: 'lessons',
+          path: 'jee-cet',
           component: BlogDetailsComponent
-      }
-  ]    
+      },
+      {
+        path: 'logarithms',
+        component: BlogDetailsComponent
+    }
+  ]
     // component: BlogsComponent
   }
 ];

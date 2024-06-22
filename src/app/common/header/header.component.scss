@@ -74,10 +74,14 @@
           margin-top: 0.8rem;
           border-bottom: 1px solid #fffefe;
           a{
-            color: #ffffff !important;
+            color: #ffffff ;
           }
 
         }
       }
     }
+
+}
+.is-active{
+  color: #3dbaf0 !important;
 }

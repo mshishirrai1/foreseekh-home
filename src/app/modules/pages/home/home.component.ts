@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ApiHandlerService } from '../../../services/core/api-handler.service'
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,48 +19,15 @@ export class HomeComponent {
     alignHeading: "center",//Center , left
     alignContent: "center",//Center , left
     alignButton: "center"//start,end,center
-  } 
+  }
 
-  trendingCourses = {
+  trendingCourses:any = {
     title: "Latest videos",
     description: "",
     addUnderline: true,
     alignHeading: "left",//Center , left
     cursor:'pointer',//Cursor style
-    thumbnailData:[
-      {
-        image:"https://img.youtube.com/vi/uDnskkCRwsk/hqdefault.jpg",
-        title:"Vedic mathematics",
-        description:"Vedic Maths: Ancient wisdom, modern efficiency for rapid mental calculations.",
-        url:'https://youtu.be/uDnskkCRwsk',
-        author:"Punith Kumar Shetty",
-        date:"22 Mar, 2023, 7p.m"
-      },
-      {
-        image:"https://img.youtube.com/vi/GeLI7Qwkpc4/hqdefault.jpg",
-        title:"Trignometry",
-        description:"Trigonometry: Unlocking angles, triangles, and waves in mathematics and physics.",
-        url:'https://youtu.be/GeLI7Qwkpc4',
-        author:"Punith Kumar Shetty",
-        date:"22 Mar, 2023, 7p.m"
-      },
-      {
-        image:"https://img.youtube.com/vi/cUS1-CZr0r4/hqdefault.jpg",
-        title:"Integration",
-        description:"Integration: Uniting and finding the area under curves in calculus.",
-        url:'https://youtu.be/cUS1-CZr0r4',
-        author:"Punith Kumar Shetty",
-        date:"22 Mar, 2023, 7p.m"
-      },
-      {
-        image:"https://img.youtube.com/vi/vDXeAGdjSFc/hqdefault.jpg",
-        title:"JEE Preparation",
-        description:"Complex Numbers: Imaginary and real parts combine for powerful mathematical tools.",
-        url:'https://youtu.be/vDXeAGdjSFc',
-        author:"Punith Kumar Shetty",
-        date:"22 Mar, 2023, 7p.m"
-      }
-    ]
+    thumbnailData:[]
   }
 
   faqData = {
@@ -79,6 +48,28 @@ export class HomeComponent {
     ]
   }
 
-  constructor(){
+  constructor(private apiHandlerService:ApiHandlerService){
+    this.getYouTubeData()
+  }
+
+  getYouTubeData(){
+    this.apiHandlerService.getDataFromYoutube(4).subscribe({
+      next: (response) => {
+        response.items.forEach((data:any) => {
+          let obj={
+            image: data.snippet.thumbnails.high.url,
+            title: data.snippet.title,
+            description:data.snippet.description,
+            url:'https://www.youtube.com/watch?v='+data.id.videoId,
+            author: data.snippet.channelTitle,
+            date:new Date(data.snippet.publishedAt).toLocaleDateString("en-US",
+              { year: 'numeric', month: 'long', day: 'numeric' }) ,
+          }
+          this.trendingCourses.thumbnailData.push(obj)
+        });
+
+      },
+
+      })
   }
 }

@@ -3,5 +3,5 @@
         <img [src]="pageData.iconPath">
     </div>
     <div class="title fs-text-color pt-2 pb-2">{{pageData.title}}</div>
-   <div class="description" [innerHtml]="pageData.description"></div>
+   <div class="description" (click)="redirectTopage(pageData)" [innerHtml]="pageData.description"></div>
 </div>

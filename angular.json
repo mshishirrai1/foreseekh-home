@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "foreseekh-home:build:production"
+              "buildTarget": "foreseekh-home:build:production"
             },
             "development": {
-              "browserTarget": "foreseekh-home:build:development"
+              "buildTarget": "foreseekh-home:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "foreseekh-home:build"
+            "buildTarget": "foreseekh-home:build"
           }
         },
         "test": {

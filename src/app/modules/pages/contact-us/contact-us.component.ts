@@ -12,6 +12,7 @@ export class ContactUsComponent {
       iconPath: "assets/images/contactus/faq.png",
       title: "Need help?",
       description: "Explore our FAQs",
+      url:'faq'
     },
     {
       iconPath: "assets/images/contactus/call.png",
@@ -27,7 +28,7 @@ export class ContactUsComponent {
 
   textDescData = {
     title: "Contact Us  ",
-    description: `<p class='pt-4'>We'd love your feedback if you're a student, tutor or Parent!. Please feel free to 
+    description: `<p class='pt-4'>We'd love your feedback if you're a student, tutor or Parent!. Please feel free to
     contact us.</p>`,
     showButton: false,
     buttonUrl: '',

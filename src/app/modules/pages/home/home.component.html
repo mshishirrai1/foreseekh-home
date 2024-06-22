@@ -8,7 +8,9 @@
         </div>
     </div>
     <div class="row mb-4">
+      @if(trendingCourses.thumbnailData?.length > 0 ){
         <app-text-thumbnail-slider [textData]="trendingCourses"></app-text-thumbnail-slider>
+      }
     </div>
     <div class="row mb-4">
         <app-fs-products></app-fs-products>

@@ -107,7 +107,9 @@ export class TextThumbnailSliderComponent implements OnInit, AfterViewInit, OnDe
   //   this.sliderData[this.sliderData.length-1].concat(...data)
   // }
 
-
+  redirectTo(url:string){
+    window.open(url,'_blank')
+  }
   ngOnDestroy() {
     if (this.slider) this.slider.destroy()
   }

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-title-icon-text',
@@ -10,5 +11,14 @@ export class TitleIconTextComponent {
     iconPath:"assets/images/contactus/faq.png",
     title:"Need help?",
     description:"Explore our FAQs",
+  }
+
+  constructor(private router: Router){}
+
+  redirectTopage(data:any){
+    if(data.url){
+      this.router.navigate([data.url]);
+
+    }
   }
 }

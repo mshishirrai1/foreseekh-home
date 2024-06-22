@@ -1,26 +1,26 @@
 <div class="pagination-slider-container pt-2 pb-2">
-    <h1 class="heading fs-text-color text-{{pageData.alignHeading}}"
-        [class.heading-underline]="pageData.addUnderline && pageData.alignHeading === 'left'"
-        *ngIf="pageData.showTitle">{{pageData.title}}</h1>
-    <p class="pt-4" *ngIf="pageData.showDescription" >{{pageData.description}}</p>
+    <h1 class="heading fs-text-color text-{{pageDataOnset?.alignHeading}}"
+        [class.heading-underline]="pageDataOnset?.addUnderline && pageDataOnset?.alignHeading === 'left'"
+        *ngIf="pageDataOnset?.showTitle">{{pageDataOnset?.title}}</h1>
+    <p class="pt-4" *ngIf="pageDataOnset?.showDescription" >{{pageDataOnset?.description}}</p>
     <ngb-carousel>
         <ng-template ngbSlide *ngFor="let item of sliderData">
             <div class="row">
-                <div class="col-3 justify-content-center d-flex pb-4"  *ngFor="let subItem of item">
-                    <div class="row m-1 individual-box"   [ngStyle]="{'cursor': pageData.cursor}" 
+                <div class="col-lg-4 col-sm-12 col-md- justify-content-center d-flex pb-4"  *ngFor="let subItem of item">
+                    <div class="row m-1 individual-box"   [ngStyle]="{'cursor': pageDataOnset?.cursor}"
                     (click)="onCardClick(subItem.url)">
                         <div class="col-12 nopadding">
                         <img [src]="subItem.image" class="thumbnail-image" >
                     </div>
                     <div class="col-12 mt-2 mb-2">
-                        <div class="fs-text-color image-date mt-1 custom-elipsis mb-2" [title]="subItem?.date" *ngIf="subItem?.date && pageData.datePosition === 'top'">
+                        <div class="fs-text-color image-date mt-1 custom-elipsis mb-2" [title]="subItem?.date" *ngIf="subItem?.date && pageDataOnset.datePosition === 'top'">
                             <i class="bi bi-calendar-week "></i>{{subItem.date}}</div>
                         <div class="fs-text-color image-title custom-elipsis" [title]="subItem?.title" *ngIf="subItem?.title">{{subItem.title}}</div>
                         <div class="fs-text-color image-description custom-elipsis" [title]="subItem?.description" *ngIf="subItem?.description">{{subItem.description}}</div>
                         <div class="fs-text-color image-author mt-2 custom-elipsis" [title]="subItem?.author" *ngIf="subItem?.author">
                             <i class="bi bi-person-bounding-box "></i>{{subItem.author}}
                         </div>
-                        <div class="fs-text-color image-date mt-1 custom-elipsis" [title]="subItem?.date" *ngIf="subItem?.date && pageData.datePosition==='bottom'">
+                        <div class="fs-text-color image-date mt-1 custom-elipsis" [title]="subItem?.date" *ngIf="subItem?.date && pageDataOnset.datePosition==='bottom'">
                             <i class="bi bi-calendar-week "></i>{{subItem.date}}</div>
                         </div>
                     </div>
