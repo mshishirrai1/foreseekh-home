@@ -19,7 +19,7 @@ export class AboutUsComponent {
     addUnderline: true,
     alignHeading: "left",//Center , left
     // alignContent: "left",//Center , left
-    imagePath:"/assets/images/homeImages/2sec.png",
+    imagePath:"/foreseekh-home/assets/images/homeImages/2sec.png",
     imageFloat:"right",//left,right,none
     imageHeight : '20rem',
     imageWidth: '35.625rem'

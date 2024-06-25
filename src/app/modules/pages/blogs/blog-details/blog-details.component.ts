@@ -26,7 +26,7 @@ export class BlogDetailsComponent {
         addUnderline: false,
         alignHeading: "left",//Center , left
         // alignContent: "left",//Center , left
-        imagePath:"/assets/images/blog/JEE.jpg",
+        imagePath:"/foreseekh-home/assets/images/blog/JEE.jpg",
         imageFloat:"left",//left,right,none
         imageHeight : '40%',
         imageWidth: '50%'
@@ -40,7 +40,7 @@ export class BlogDetailsComponent {
         addUnderline: false,
         alignHeading: "left",//Center , left
         // alignContent: "left",//Center , left
-        imagePath:"/assets/images/blog/log.png",
+        imagePath:"/foreseekh-home/assets/images/blog/log.png",
         imageFloat:"left",//left,right,none
         imageHeight : '40%',
         imageWidth: '50%'
