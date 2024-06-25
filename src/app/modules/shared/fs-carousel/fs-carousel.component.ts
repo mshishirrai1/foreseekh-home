@@ -12,7 +12,7 @@ export class FsCarouselComponent {
 
   @Input() sliderData = [
     {
-      image: "/foreseekh-home/assets/images/products/product2.svg",
+      image: "/assets/images/products/product2.svg",
       enableAdditionalTextOnBanner:true,
       title: "",
       enableBannerClick: true,
@@ -21,7 +21,7 @@ export class FsCarouselComponent {
       showShadow:false,
     },
     {
-      image: "/foreseekh-home/assets/images/products/product1.svg",
+      image: "/assets/images/products/product1.svg",
       enableAdditionalTextOnBanner:true,
       title: "",
       enableBannerClick: true,

@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class TitleIconTextComponent {
   @Input() pageData={
-    iconPath:"/foreseekh-home/assets/images/contactus/faq.png",
+    iconPath:"/assets/images/contactus/faq.png",
     title:"Need help?",
     description:"Explore our FAQs",
   }

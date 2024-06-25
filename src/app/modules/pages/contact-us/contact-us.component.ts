@@ -9,18 +9,18 @@ import { NgForm } from '@angular/forms';
 export class ContactUsComponent {
   pageData = [
     {
-      iconPath: "/foreseekh-home/assets/images/contactus/faq.png",
+      iconPath: "/assets/images/contactus/faq.png",
       title: "Need help?",
       description: "Explore our FAQs",
       url:'faq'
     },
     {
-      iconPath: "/foreseekh-home/assets/images/contactus/call.png",
+      iconPath: "/assets/images/contactus/call.png",
       title: "Call us on :",
       description: "+91 7483045967",
     },
     {
-      iconPath: "/foreseekh-home/assets/images/contactus/mail.png",
+      iconPath: "/assets/images/contactus/mail.png",
       title: "Mail us on :",
       description: "support@foreseekh.com",
     }

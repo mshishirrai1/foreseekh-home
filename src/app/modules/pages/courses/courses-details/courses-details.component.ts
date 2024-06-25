@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CoursesDetailsComponent {
   sliderData = [
     {
-      image: "/foreseekh-home/assets/images/homePageSlider/1.jpg",
+      image: "/assets/images/homePageSlider/1.jpg",
       enableAdditionalTextOnBanner:true,
       title: "Test title",
       enableBannerClick: true,
@@ -17,7 +17,7 @@ export class CoursesDetailsComponent {
       showShadow:true,
     },
     {
-      image: "/foreseekh-home/assets/images/homePageSlider/2.jpg",
+      image: "/assets/images/homePageSlider/2.jpg",
       enableAdditionalTextOnBanner:true,
       title: "Test title",
       enableBannerClick: true,
@@ -163,7 +163,7 @@ export class CoursesDetailsComponent {
    desc2:"Presidency school Mangalore",
    courses:'14',
    learners:"1200",
-   imagePath:"/foreseekh-home/assets/images/instructors/punith.png",
+   imagePath:"/assets/images/instructors/punith.png",
    description:`Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
