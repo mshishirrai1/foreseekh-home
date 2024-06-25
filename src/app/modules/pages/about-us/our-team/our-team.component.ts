@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class OurTeamComponent {
   teamData=[
     {
-      image:'assets/images/ourTeam/sn.png',
+      image:'/assets/images/ourTeam/sn.png',
       name:"Srinidhi Bhandary",
       designation:"Co-founder",
       email:"srinidhi.hegde@foreseekh.com",
@@ -17,7 +17,7 @@ export class OurTeamComponent {
       facebookUrl:"",
     },
     {
-      image:'assets/images/ourTeam/pn.jpg',
+      image:'/assets/images/ourTeam/pn.jpg',
       name:"Punith Kumar Shetty",
       designation:"Co-founder and Educator",
       email:"punithkumar.shetty@foreseekh.com",
@@ -26,7 +26,7 @@ export class OurTeamComponent {
       facebookUrl:"",
     },
     {
-      image:'assets/images/ourTeam/nk.jpg',
+      image:'/assets/images/ourTeam/nk.jpg',
       name:"Nikhil Khunder",
       designation:"Professional Advisor",
       email:"",
@@ -35,7 +35,7 @@ export class OurTeamComponent {
       facebookUrl:"",
     },
     {
-      image:'assets/images/ourTeam/sr.jpg',
+      image:'/assets/images/ourTeam/sr.jpg',
       name:"Shishir Rai",
       designation:"Head of Business Development",
       email:"shishir.rai@foreseekh.com",

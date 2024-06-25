@@ -30,7 +30,7 @@ export class BlogsComponent {
     showTitle:false,
     thumbnailData:[
       {
-        image:"assets/images/blog/JEE.jpg",
+        image:"/assets/images/blog/JEE.jpg",
         title:"JEE and CET: A Guide to Understanding Entrance Exams in India",
         description:`In India, gaining admission to prestigious engineering colleges and institutions often hinges on two primary entrance exams: the Joint Entrance Examination (JEE) and Common Entrance Test (CET). These exams serve as crucial gateways for aspiring engineers and are pivotal in shaping their academic and professional futures. Let’s delve deeper into what these exams entail, their significance,
         and how they impact students aiming to pursue engineering careers
@@ -47,7 +47,7 @@ export class BlogsComponent {
         date:"12 Mar, 2023, 9p.m"
       },
       {
-        image:"assets/images/blog/log.png",
+        image:"/assets/images/blog/log.png",
         title:"The Power of Logarithms: Unlocking the Magic of Mathematical Scaling",
         description:`Logarithms, often abbreviated as logs, are a fundamental concept in mathematics that have profound implications across various fields, from engineering and physics to finance and computer science. Despite their abstract nature, logarithms play a crucial role in simplifying calculations, understanding exponential growth and decay, and solving complex equations. In this blog, we'll explore the power of logarithms, their properties, applications, and why they are indispensable in both theoretical and practical realms.
         <p>Logarithms are essentially the inverse operation of exponentiation. If exponentiation involves raising a base number to a certain power to obtain a result, logarithms help determine the exponent when given the base and the result.</p>

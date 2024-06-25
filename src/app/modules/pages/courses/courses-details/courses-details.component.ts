@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CoursesDetailsComponent {
   sliderData = [
     {
-      image: "assets/images/homePageSlider/1.jpg",
+      image: "/assets/images/homePageSlider/1.jpg",
       enableAdditionalTextOnBanner:true,
       title: "Test title",
       enableBannerClick: true,
@@ -17,7 +17,7 @@ export class CoursesDetailsComponent {
       showShadow:true,
     },
     {
-      image: "assets/images/homePageSlider/2.jpg",
+      image: "/assets/images/homePageSlider/2.jpg",
       enableAdditionalTextOnBanner:true,
       title: "Test title",
       enableBannerClick: true,
@@ -30,8 +30,8 @@ export class CoursesDetailsComponent {
 
   course={
     title:"Vedic Mathemetics",
-    description:`Start your path to a career in project management. In this program, you’ll 
-    learn in-demand skills that will have you job-ready in less than six months. 
+    description:`Start your path to a career in project management. In this program, you’ll
+    learn in-demand skills that will have you job-ready in less than six months.
     No degree or experience is required. `,
     instructor:"Punith Kumar Shetty",
     price:12000,
@@ -43,10 +43,10 @@ export class CoursesDetailsComponent {
     title: "About Vedic Mathemetics ",
     description: `<p class="mt-4"> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
     velit esse cillum dolore eu fugiat nulla pariatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-     do eiusmod tempor incididunt 
-    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+     do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
     showButton: false,
     buttonUrl: '',
@@ -163,13 +163,13 @@ export class CoursesDetailsComponent {
    desc2:"Presidency school Mangalore",
    courses:'14',
    learners:"1200",
-   imagePath:"assets/images/instructors/punith.png",
-   description:`Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+   imagePath:"/assets/images/instructors/punith.png",
+   description:`Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum `,
    fbUrl:'',
    instaUrl:'',
